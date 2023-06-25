@@ -2,9 +2,9 @@
   <div class="container">
     <h1>Movie List</h1>
     <div class="movie-cards">
-      <div v-for="movie in movies" :key="movie.imdbID" class="movie-card">
-        <router-link :to="{ name: 'MovieDetail', params: { id: movie.imdbID, movie: JSON.stringify(movie) } }" tag="li"
-          :movie="movie">
+      <div v-for="(movie, index) in movies" :key="index" class="movie-card">
+        <router-link :id="'router_' + index"
+          :to="{ name: 'MovieDetail', params: { id: index, movie: JSON.stringify(movie) } }" tag="li">
           <div class="movie-poster">
             <img :src="movie.Poster" :alt="movie.Title" />
           </div>

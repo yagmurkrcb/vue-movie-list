@@ -36,7 +36,6 @@ export default {
 
     onMounted(() => {
       movie.value = JSON.parse(route.params.movie)
-      console.log(movie.value)
     })
 
     return { movie }
