@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`mount > should be mounted 1`] = `
+"<div data-v-0a768dbf=\\"\\" class=\\"container\\">
+  <h1 data-v-0a768dbf=\\"\\">Movie List</h1>
+  <div data-v-0a768dbf=\\"\\" class=\\"movie-cards\\"></div>
+</div>"
+`;
